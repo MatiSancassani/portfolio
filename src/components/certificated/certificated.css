@@ -1,0 +1,55 @@
+.certicatedcard {
+    width: 50rem;
+    height: 30rem;
+    perspective: 1000px;
+}
+
+.certificatedImage {
+    width: 50rem;
+    height: 30rem;
+}
+
+.certicatedcard-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+}
+
+.certicatedcard:hover .certicatedcard-inner {
+    transform: rotateY(180deg);
+}
+
+.certicatedcard-front,
+.certicatedcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.certicatedcard-front {
+    background-color: #010409;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    /* border: 10px solid #010409; */
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transform: rotateY(0deg);
+}
+
+.certicatedcard-back {
+    background-color: #010409;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    /* border: 10px solid #010409; */
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+}

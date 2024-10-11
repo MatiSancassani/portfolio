@@ -1,0 +1,135 @@
+.card {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.card img {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover {
+    transform: rotate(-1deg) scale(1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover .card__content {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+}
+
+.card__title {
+    margin: 0;
+    font-size: 30px;
+    color: #000000;
+    font-weight: 900;
+}
+
+.card__description {
+    margin: 10px 0 0;
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.3;
+}
+
+.card:hover img {
+    scale: 0;
+    transform: rotate(-45deg);
+}
+
+.cardsContainer {
+    margin: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.technologysTitle {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: black;
+}
+
+.technologys__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.technologys__container:hover {
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+.technologys__title {
+    color: black;
+    margin: .3rem 0;
+    font-size: .8rem;
+}
+
+.technologys {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 30px;
+    color: #000000;
+}
+
+.technologys .html {
+    font-size: 2.5rem;
+    color: #f89b29;
+}
+
+.technologys .css {
+    font-size: 2.5rem;
+    color: #0000ff;
+}
+
+.technologys .js {
+    font-size: 2.5rem;
+    background-color: #323330;
+    color: #f0db4f;
+}
+
+.technologys .bootstrap {
+    font-size: 2.5rem;
+    color: #7611f7;
+}

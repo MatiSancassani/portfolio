@@ -1,0 +1,400 @@
+@font-face {
+  font-family: "Avante";
+  src: url('./fonts/Avante_Go.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url('./fonts/GothamBookItalic.ttf') format('woff2');
+}
+
+/* EFECTOS TEXTO ANIMISTA */
+.focus-in-contract {
+  -webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.flicker-1 {
+  -webkit-animation: flicker-1 4s linear both;
+  animation: flicker-1 4s linear both;
+}
+
+@-webkit-keyframes flicker-1 {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  41.99% {
+    opacity: 1;
+  }
+
+  42% {
+    opacity: 0;
+  }
+
+  43% {
+    opacity: 0;
+  }
+
+  43.01% {
+    opacity: 1;
+  }
+
+  47.99% {
+    opacity: 1;
+  }
+
+  48% {
+    opacity: 0;
+  }
+
+  49% {
+    opacity: 0;
+  }
+
+  49.01% {
+    opacity: 1;
+  }
+}
+
+@keyframes flicker-1 {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  41.99% {
+    opacity: 1;
+  }
+
+  42% {
+    opacity: 0;
+  }
+
+  43% {
+    opacity: 0;
+  }
+
+  43.01% {
+    opacity: 1;
+  }
+
+  47.99% {
+    opacity: 1;
+  }
+
+  48% {
+    opacity: 0;
+  }
+
+  49% {
+    opacity: 0;
+  }
+
+  49.01% {
+    opacity: 1;
+  }
+}
+
+
+/* START NAVBAR COMPONENT STYLES */
+
+.container {
+  background-color: #010409;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul {
+  font-size: 1.5rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+}
+
+.navbar ul li {
+  font-family: Gotham;
+  cursor: pointer;
+}
+
+.logo {
+  font-family: Avante;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+/* END NAVBAR COMPONENT STYLES */
+
+
+
+
+.firstPage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+  align-items: center;
+}
+
+.social-icon {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  transition: .3s;
+}
+
+.social-icon:hover {
+  transform: translate(0, -5px);
+  transition: .3s;
+}
+
+.titleContainer {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.titleName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.titleName h2 {
+  font-family: Helvetica;
+  font-size: 4rem;
+  margin: 0;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.information .bars {
+  width: 50px;
+  height: 8px;
+  background-color: white;
+}
+
+.information {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.information img {
+  width: 300px;
+  height: 400px;
+  margin-left: -4rem;
+  margin-right: 5rem;
+}
+
+
+
+.personalInformation h3 {
+  font-family: Helvetica;
+  color: rgb(201, 201, 201);
+}
+
+.personalInformation h4 {
+  font-size: 2rem;
+  font-family: Gotham;
+}
+
+.personalInformation p {
+  font-family: Helvetica;
+  font-size: 1.2rem;
+  color: rgb(180, 180, 180);
+  margin: 2.5rem 0;
+}
+
+.buttonCV {
+  border: none;
+  background-color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  border: 1px solid white;
+  border-radius: 50px 0;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  transition: all .3s ease;
+}
+
+.buttonCV:hover {
+  background-color: black;
+  color: white;
+  transition: all .3s ease;
+}
+
+.secondPage {
+  height: 100vh;
+}
+
+.proyectosContainer {
+  text-align: center;
+
+}
+
+/* START APRENDIZAJE COMPONENT STYLES */
+.aprendizajes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificated-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 25px;
+}
+
+.technologys-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.certificated-description {
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 1.5rem;
+}
+
+.certificated-date {
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: grey;
+}
+
+.aprendizaje-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 2rem;
+}
+
+.aprendizaje {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.aprendizaje-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto 2px auto;
+  gap: 20px 70px;
+  padding: 70px;
+}
+
+.line {
+  background-color: white;
+  position: relative;
+}
+
+.line::before,
+.line::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+
+  position: absolute;
+  top: -20px;
+  left: -9px;
+}
+
+.line::after {
+  top: 100%;
+}
+
+.certificated-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificatedButton {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  border: 1px solid white;
+  border-radius: 10% / 50%;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  transition: all .3s ease;
+}
+
+.certificatedButton:hover {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  transition: all .3s ease;
+}
+
+/* END APRENDIZAJE COMPONENT STYLES */
