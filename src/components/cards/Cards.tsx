@@ -37,10 +37,12 @@ const Cards = () => {
                     </div>
                     <div className='buttons_container'>
                         <button className="view_button">
-                            <FaRegEye /> Ver proyecto
+                            <a href="https://big-burger-ehcd.vercel.app/" target='_blank'>
+                                <FaRegEye />Ver proyecto
+                            </a>
                         </button>
                         <button className="view_button">
-                            <a href="https://github.com/MatiSancassani/vikinga">
+                            <a href="https://github.com/MatiSancassani/BigBurger" target='_blank'>
                                 <FaGithub />
                             </a>
                         </button>
