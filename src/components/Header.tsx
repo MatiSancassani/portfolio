@@ -14,9 +14,9 @@ const Header = () => {
                         <p className="bars"></p>
                     </div>
                     <div className="social">
-                        <a href="https://github.com/MatiSancassani"><FaGithub className="social-icon" /></a>
-                        <a href="https://www.linkedin.com/in/matisancassani"><FaLinkedin className="social-icon" /></a>
-                        <a href="https://www.instagram.com/sanca.dev"><FaInstagram className="social-icon" /></a>
+                        <a href="https://github.com/MatiSancassani" target="_blank"><FaGithub className="social-icon" /></a>
+                        <a href="https://www.linkedin.com/in/matisancassani" target="_blank"><FaLinkedin className="social-icon" /></a>
+                        <a href="https://www.instagram.com/sanca.dev" target="_blank"><FaInstagram className="social-icon" /></a>
                     </div>
                 </div>
 
@@ -32,7 +32,9 @@ const Header = () => {
                         Me entusiasma la idea de aplicar y expandir mis habilidades en un entorno dinámico, <br />
                         donde pueda contribuir a proyectos innovadores y aprender de un equipo experimentado
                     </p>
-                    <button className="buttonCV flicker-1">Descargar CV ⮞</button>
+                    <a href="/docs/MatiasSancassani.pdf" download="MatiasSancassani.pdf">
+                        <button className="buttonCV flicker-1">Descargar CV ⮞</button>
+                    </a>
                 </div>
             </div>
         </div>
